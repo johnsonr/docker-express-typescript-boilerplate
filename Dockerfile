@@ -1,4 +1,4 @@
-FROM node:14.17.1 as base
+FROM node:14.17.1@sha256:a3d7d005ba5bfa5f48b10d4fe0ed937644f5b0bc0b583e7c7f1811384cf30911 as base
 
 # Add package file
 COPY package*.json ./
