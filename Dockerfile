@@ -15,7 +15,7 @@ COPY openapi.json ./openapi.json
 RUN npm run build
 
 # Start production image build
-FROM gcr.io/distroless/nodejs:14
+FROM gcr.io/distroless/nodejs:14@sha256:80eff5f630a0c0f86dc6a228e970d23dbc614f2879fd4b9232e8faed353d38ca
 
 # Copy node modules and build directory
 COPY --from=base ./node_modules ./node_modules
